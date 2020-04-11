@@ -6,6 +6,8 @@ import {debounceTime,filter,take,takeUntil} from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
+
+//uncomment and check one by one
 export class AppComponent  {
   name = 'Observable - Filter';
 
@@ -24,9 +26,9 @@ ngOnInit():void{
 
 
 //takeUntil takes an event as param, helps to stop enti until that event triggers
-  const Check=
+  // const Check=
   
-  interval(1000).pipe(takeUntil(fromEvent(document,'click'))).subscribe(value=>console.log('takeUntil',value))
+  // interval(1000).pipe(takeUntil(fromEvent(document,'click'))).subscribe(value=>console.log('takeUntil',value))
 
 }
 }
